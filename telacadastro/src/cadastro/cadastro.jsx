@@ -12,7 +12,7 @@ function Cadastro() {
 
     const [user, setUser] = useState({
         email: "",
-        Password: "",
+        password: "",
         age: 0,
         name: ""    
     })
@@ -23,6 +23,7 @@ function Cadastro() {
     }
 
     const handleSubmit = (event) => {
+      console.log(user)
         event.preventDefault();
         alert("Email:" +user.email+ " " +"Senha:" +user.password + " " +"Idade:" +user.age+ " " +"Nome:" +user.name)
     }
